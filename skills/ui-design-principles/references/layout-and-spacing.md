@@ -1,10 +1,10 @@
 # Layout and spacing
 
-## Purpose and evidence
+## Purpose
 
-Use layout to reveal relationships and keep the task usable as available space changes. Sajid's [spacing lesson (S7)](https://www.youtube.com/watch?v=-O1ds-kPUZg) describes grouping, balance, and readability without arbitrary guesses. His [responsive lesson (S9)](https://www.youtube.com/watch?v=l04dDYW-QaI) targets small phones through large monitors. His own [Dynamic Sizes demo (S10)](https://codepen.io/whosajid/pen/jOoyqBW) demonstrates bounded fluid typography, constrained containers, and proportional flex sizing.
+Use layout to reveal relationships and keep the task usable as available space changes. Spacing creates grouping, balance, and readable rhythm; responsive design must support the task from narrow screens to wide ones.
 
-S7 and S9 were verified at creator-authored description level; S10's source code was inspected. The production workflow and exceptions below are this skill's synthesis. Consult the [source register](sources.md); do not treat the demo's numeric values as universal requirements.
+Bounded fluid sizing, constrained reading widths, and proportional layout can help, but their numeric values are contextual. Choose changes based on the content and observed layout behavior.
 
 ## Model: relationships first, dimensions second
 

@@ -11,7 +11,7 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL = ROOT / "skills" / "sajid-ui-design"
+SKILL = ROOT / "skills" / "ui-design-principles"
 SPEC = importlib.util.spec_from_file_location("palette_contrast", SKILL / "scripts" / "check_contrast.py")
 contrast = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(contrast)

@@ -1,6 +1,6 @@
 # Worked examples
 
-These hypothetical exercises illustrate this skill's original implementation guidance. They are not Sajid's case studies or measured usability results. See [sources and provenance](sources.md) for the evidence. Adapt decisions to the repository and task; these are not visual presets.
+These hypothetical exercises illustrate context-dependent design decisions. They are not measured usability results or visual presets. Adapt every decision to the repository and task.
 
 ## 1. Dense enterprise dashboard with an established dark theme
 

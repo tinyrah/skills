@@ -1,4 +1,6 @@
-# Sources and provenance
+# Credits and provenance
+
+This file preserves attribution and evidence limits; it is **not** an operational design reference. Design decisions and agent instructions live in `SKILL.md` and `references/`.
 
 Research date: **2026-11-02**.
 
@@ -10,7 +12,7 @@ Creator-authored pages and demo source code provide the strongest inspected evid
 
 The skill's diagnosis workflow, decision tables, exceptions, token names and values, scripts, framework guidance, review checklist, and production verification procedures are original implementation synthesis. They are not Sajid quotations or universal numerical prescriptions. External demos illustrate techniques; their presence here does not certify their complete accessibility or production behavior. This repository's examples are independently written, not copies of those applications.
 
-## Sajid source register
+## Original creator's source register
 
 | ID and source | Evidence actually inspected | Used for |
 | --- | --- | --- |
@@ -58,7 +60,7 @@ The contrast helper checks declared color pairs within its documented input limi
 | [GitHub CLI: gh skill install](https://cli.github.com/manual/gh_skill_install) | Skill package discovery and installation commands |
 | [Feature-Sliced Design example skill](https://github.com/feature-sliced/skills/tree/master/feature-sliced-design) | User-provided structural reference: concise entry point and linked supporting files; no UI-design authority or copied instructional content |
 
-Discovery depends on the installed agent and its version. Listing every reference directly in `SKILL.md` makes resources discoverable; it does not mean every file is loaded into context automatically. Follow the entry point's read conditions and preserve the complete skill directory when installing.
+Discovery depends on the installed agent and its version. Listing every operational reference directly in `SKILL.md` makes resources discoverable; it does not mean every file is loaded into context automatically. Follow the entry point's read conditions and preserve the complete skill directory when installing.
 
 ## Maintaining this register
 

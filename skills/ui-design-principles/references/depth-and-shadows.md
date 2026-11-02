@@ -1,10 +1,10 @@
 # Depth and shadows
 
-## Purpose and evidence
+## Purpose
 
 Use this reference when surfaces blend together, controls lack emphasis, overlays are unclear, or an interface feels unnecessarily heavy. Depth should explain structure or interaction; it is not a required aesthetic.
 
-**Source foundation:** Sajid's [Better Shadows demonstration (S3)](https://codepen.io/whosajid/pen/QWReYqV), linked from his [CSS Tricks page](https://www.iamsajid.com/css-tricks/), combines a tight dark shadow with a larger soft one. His [UI Colors styles (S2)](https://github.com/whosajid/UI-Colors/blob/cb8f1d0cd05e3ff27a5d603d837cf534654bef5e/style.css) also demonstrate related surfaces, upper-edge highlights, and gradients. The decision process below is original implementation synthesis; see [source provenance](sources.md).
+**Design premise:** A tight contact shadow plus a broader soft ambient shadow can suggest elevation. Surface levels, edges, borders, and restrained highlights can communicate depth even when shadows are inappropriate. Judge the effect on the actual background.
 
 ## Mental model: separate structure from decoration
 

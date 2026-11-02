@@ -102,5 +102,25 @@ class ValidationTests(unittest.TestCase):
         self.assertEqual(self.errors(), [])
 
 
+class RepositoryBrandingTests(unittest.TestCase):
+    """Attribution belongs in CREDITS.md, not in agent decision guidance."""
+
+    def test_generic_skill_and_separate_credits(self):
+        skill = ROOT / "skills" / "ui-design-principles"
+        self.assertTrue((skill / "SKILL.md").is_file())
+        self.assertTrue((skill / "CREDITS.md").is_file())
+        self.assertFalse((skill / "references" / "sources.md").exists())
+
+        operational = [ROOT / "README.md", ROOT / "evals" / "scenarios.json"]
+        operational += [path for path in skill.rglob("*")
+                        if path.is_file() and path.name not in ("CREDITS.md", "LICENSE")]
+        for path in operational:
+            if path.suffix not in (".md", ".py", ".yaml", ".json", ".css"):
+                continue
+            with self.subTest(path=path.relative_to(ROOT)):
+                content = path.read_text(encoding="utf-8")
+                self.assertNotRegex(content.lower(), r"sajid|whosajid|iamsajid")
+
+
 if __name__ == "__main__":
     unittest.main()

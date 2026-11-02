@@ -9,7 +9,7 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "skills" / "sajid-ui-design" / "scripts" / "check_contrast.py"
+SCRIPT = ROOT / "skills" / "ui-design-principles" / "scripts" / "check_contrast.py"
 SPEC = importlib.util.spec_from_file_location("check_contrast", SCRIPT)
 contrast = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(contrast)

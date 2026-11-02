@@ -1,6 +1,6 @@
 # Accessibility and validation
 
-Use these production checks alongside visual judgment. They are standards-based additions, not claims about Sajid's demos. The [source ledger](sources.md) links the standards. Scope checks to the changed components and their actual dependencies; do not claim whole-product conformance from this checklist.
+Use these production checks alongside visual judgment. They reflect accessibility standards and engineering practice. Scope checks to the changed components and their actual dependencies; do not claim whole-product conformance from this checklist.
 
 ## Measure the right thing
 

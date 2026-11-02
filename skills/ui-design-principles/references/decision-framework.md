@@ -1,6 +1,6 @@
 # Decision framework
 
-Turn a vague request into a bounded intervention. This procedure is an original engineering synthesis. Sajid's emphasis on understandable interfaces informs it; the procedure is not presented as his exact method. See [sources](sources.md).
+Turn a vague request into a bounded intervention. Prioritize the task, observable problems, existing constraints, and evidence over visual effects for their own sake.
 
 ## Establish a working contract
 

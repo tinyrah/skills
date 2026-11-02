@@ -1,10 +1,10 @@
 # Typography and hierarchy
 
-## Purpose and evidence
+## Purpose
 
-Make the information needed for the current task easy to find and read. Sajid's [typography lesson (S6)](https://www.youtube.com/watch?v=9-oefwZ6Z74) identifies font size, weight, and color as important UI choices, and distinguishes functional interfaces from landing pages that also depend on imagery, copy, and motion. His [simplicity lesson (S8)](https://www.youtube.com/watch?v=9zt__YPULm8) emphasizes reducing user effort.
+Make the information needed for the current task easy to find and read. Typography uses size, weight, color, and placement to establish task hierarchy; marketing and editorial experiences may require more expressive composition than dense functional tools.
 
-These statements were verified in creator-authored video descriptions, not complete transcripts. The procedures, examples, and starting values below are this skill's implementation guidance. See the [source register](sources.md) for attribution boundaries. The video's “80%” title is not a measured design-quality formula.
+The procedures and starting values below are adaptable design guidance. Do not treat a percentage in a headline or a demo value as a measured design-quality formula.
 
 ## Model: task importance becomes visual emphasis
 
@@ -31,7 +31,7 @@ Keep document semantics and visual roles separate. Choose heading levels for the
 4. **Tune reading conditions.** Set line height and text width for the actual language and content length. Start-align extended reading content according to writing direction. Inspect font loading and fallback behavior; a different font can change wrapping and control dimensions.
 5. **Inspect at normal scale.** Compare the intended reading order with what actually stands out. Zoomed-in component work can hide an unbalanced page. Change one cause at a time and preserve the surrounding system.
 
-For a new web project without tokens, a body size around `1rem` with a unitless line height around `1.5` is a starting experiment, not a requirement or Sajid quotation. `rem` follows the root font size; `em` can follow local sizing. Avoid overriding user text preferences to preserve a screenshot.
+For a new web project without tokens, a body size around `1rem` with a unitless line height around `1.5` is a starting experiment, not a requirement. `rem` follows the root font size; `em` can follow local sizing. Avoid overriding user text preferences to preserve a screenshot.
 
 ## Verify the result
 

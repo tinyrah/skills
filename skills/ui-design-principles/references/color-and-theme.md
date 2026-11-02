@@ -1,10 +1,10 @@
 # Color and theme
 
-## Purpose and evidence
+## Purpose
 
 Use this reference when choosing, repairing, or extending a palette, changing themes, or diagnosing weak visual hierarchy. Preserve the project's brand and existing token contracts.
 
-**Source foundation:** Sajid's [UI Colors tool (S1)](https://www.iamsajid.com/ui-colors/) separates surface, text, boundary, action, and alert colors. Its [implementation (S2)](https://github.com/whosajid/UI-Colors/blob/cb8f1d0cd05e3ff27a5d603d837cf534654bef5e/script.js) uses related surface levels, distinct text emphasis, and independently specified light/dark palettes. The procedures below are original implementation synthesis. See [source provenance](sources.md).
+**Design premise:** Treat color as a set of semantic relationships among canvases, surfaces, text, borders, actions, and feedback—not a collection of isolated swatches. The roles, procedures, and examples below are adaptable choices, not universal palette values.
 
 ## Mental model: assign a job before choosing a color
 

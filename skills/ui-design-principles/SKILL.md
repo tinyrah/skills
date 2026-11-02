@@ -1,11 +1,11 @@
 ---
-name: sajid-ui-design
-description: "Design, audit, and refine frontend interfaces using Sajid-inspired principles of hierarchy, color, depth, shadows, typography, and spacing. Use for new screens, UI polish, visual reviews, design tokens, light or dark themes, responsive layouts, and component states in any frontend stack. Diagnose the project before styling, preserve its design system, and verify accessibility and rendered behavior. Do not use for backend-only work or unrelated graphic design."
+name: ui-design-principles
+description: "Design, audit, and refine frontend interfaces using task-centered principles of hierarchy, color, depth, shadows, typography, and spacing. Use for new screens, UI polish, visual reviews, design tokens, light or dark themes, responsive layouts, and component states in any frontend stack. Diagnose the project before styling, preserve its design system, and verify accessibility and rendered behavior. Do not use for backend-only work or unrelated graphic design."
 ---
 
-# Sajid UI Design
+# UI Design Principles
 
-Turn a UI request into a reasoned, testable design improvement. Apply the principles to the project's task, audience, platform, and existing visual language. Treat this as an independent adaptation of Sajid's public teaching and examples. Consult the source ledger for the boundary between verified material and engineering additions.
+Turn a UI request into a reasoned, testable design improvement. Apply the principles to the project's task, audience, platform, and existing visual language. Prefer purposeful, context-dependent choices over prescribing a single visual style.
 
 ## Core workflow
 
@@ -62,15 +62,15 @@ Read every applicable file before acting on its topic. All reference files are d
 | Plan verification; change contrast, focus, targets, motion, or reflow; finish any visual task | [Accessibility and validation](references/accessibility-and-validation.md) |
 | Map decisions into a framework, native platform, token system, or component library | [Implementation patterns](references/implementation-patterns.md) |
 | Resolve tradeoffs in dashboards, editorial pages, marketing, mobile forms, or local fixes | [Worked examples](references/worked-examples.md) |
-| Check attribution, evidence quality, primary sources, standards, or adaptation limits | [Sources and provenance](references/sources.md) |
 
 ## Bundled tools and assets
 
 - [Contrast checker](scripts/check_contrast.py): optionally calculate WCAG contrast for **opaque sRGB hex** pairs with Python 3. Use resolved foreground/background values. It does not parse CSS, composite transparency, evaluate gradients, or certify a page. From this skill's directory: `python scripts/check_contrast.py '#526071' '#FFFFFF' --minimum 4.5 --json`. Exit 0 means this pair passes; 1 means it fails; 2 means invalid input.
-- [Token starter](assets/token-starter.css): original, optional CSS illustrating semantic roles and independent themes. Inspect before adapting; retain existing tokens when available. The palette and scale are examples, not Sajid's prescribed values. Translate roles into the native theme system on other platforms.
+- [Token starter](assets/token-starter.css): original, optional CSS illustrating semantic roles and independent themes. Inspect before adapting; retain existing tokens when available. The palette and scale are examples, not prescribed values. Translate roles into the native theme system on other platforms.
 - [Review template](assets/review-template.md): an evidence and decision record for substantial audits or implementation handoffs. Omit irrelevant sections for small changes.
 - [Agent UI metadata](agents/openai.yaml): optional host metadata. Copilot's instructions remain in this file and linked references.
 - [License](LICENSE): retain this notice when redistributing the portable skill; linked external works keep their own licenses.
+- [Credits](CREDITS.md): attribution and provenance only; not required for operational design decisions.
 
 ## Completion contract
 

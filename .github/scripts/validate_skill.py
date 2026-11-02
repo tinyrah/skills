@@ -17,7 +17,7 @@ from urllib.parse import unquote, urlsplit
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_SKILL = REPOSITORY_ROOT / "skills" / "sajid-ui-design"
+DEFAULT_SKILL = REPOSITORY_ROOT / "skills" / "ui-design-principles"
 LINK = re.compile(r"!?\[[^\]\n]*\]\(\s*([^\n)]*?)\s*\)")
 HEADING = re.compile(r"^ {0,3}(#{1,6})\s+(.+?)\s*#*\s*$")
 NAME = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")

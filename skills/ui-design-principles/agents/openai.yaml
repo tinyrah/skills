@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Design Principles"
+  short_description: "Principled UI design with adaptive, verifiable decisions"
+  default_prompt: "Use $ui-design-principles to improve this frontend through clear hierarchy, color, depth, and accessible interaction."

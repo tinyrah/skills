@@ -1,6 +1,6 @@
 # Implementation patterns
 
-Translate decisions into the existing frontend. The patterns below are original engineering synthesis; they do not prescribe a framework or claim Sajid uses each architecture. See [sources](sources.md) for the visual foundations.
+Translate the design decisions into the existing frontend. The patterns below are framework-independent guidance; reuse project conventions rather than imposing a new architecture.
 
 ## Inspect before choosing a mechanism
 

@@ -1,6 +1,6 @@
 # Components and states
 
-Use this production extension when visual work affects behavior. Sajid's demos inform visual techniques; the state model below is original implementation guidance supported by [sources](sources.md).
+Use this reference whenever visual work affects behavior. Interactive states and task completion are part of the design, not optional decoration.
 
 ## Define the state contract
 
@@ -43,7 +43,7 @@ Keep navigation selection distinct from hover and focus. When a sidebar collapse
 
 ## Purposeful motion
 
-Sajid's [motion guide](https://www.iamsajid.com/motion-design/) explains transforms, timing, and easing through examples. Apply that vocabulary to input feedback, continuity, spatial relationships, or deliberate identity. The production decisions here are our additions.
+Use transforms, timing, and easing when motion clarifies feedback, continuity, spatial relationships, or deliberate identity. Make the reason for movement explicit.
 
 Use short, local feedback for frequent actions. Do not make usable controls wait for animation. Inspect performance rather than assuming every transform is free. Honor reduced-motion preferences and provide the same outcome without movement. Keep critical information available without waiting for transitions.
 
