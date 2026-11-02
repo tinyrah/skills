@@ -1,0 +1,42 @@
+{
+  "purpose": "Manual behavioral checks for future revisions. Run each prompt in a fresh agent context with the skill and only task-local artifacts. Keep evaluation criteria out of the task prompt.",
+  "evaluation": "Assess observed decisions and evidence, not stylistic similarity. Mark an assertion not observed when required source or runtime evidence is missing. Do not count these cases as automated or passed merely because this file parses.",
+  "cases": [
+    {
+      "id": "dense-dashboard",
+      "prompt": "Use sajid-ui-design to improve this existing operations dashboard. Keep our brand, library, and information density. It feels flat and hard to scan.",
+      "artifacts_needed": ["Existing dashboard source", "Project tokens", "Rendered baseline if available"],
+      "assess": ["Inspects existing roles before changing values", "Prioritizes task hierarchy and readable status", "Preserves useful density", "Justifies any elevation", "Reports actual verification and unknowns"]
+    },
+    {
+      "id": "flat-editorial",
+      "prompt": "Use sajid-ui-design to refine this documentation article. Preserve our serif typeface and plain editorial style. Improve reading comfort and grouping.",
+      "artifacts_needed": ["Article markup", "Typography and layout styles", "Long article content"],
+      "assess": ["Preserves editorial identity", "Uses spacing and reading hierarchy", "Does not impose a card or shadow system", "Preserves heading semantics and reflow"]
+    },
+    {
+      "id": "dark-theme",
+      "prompt": "Use sajid-ui-design to repair this app's dark theme. The dropdowns blend into the canvas and selected items are hard to read.",
+      "artifacts_needed": ["Theme tokens", "Dropdown implementation and states"],
+      "assess": ["Uses independent dark surface roles", "Checks selected foreground/background together", "Keeps focus and overlay behavior", "Does not rely solely on stronger black shadows"]
+    },
+    {
+      "id": "native-form",
+      "prompt": "Use sajid-ui-design to improve this native account settings screen. Keep platform controls and the existing palette. Long text clips, and offline Save loses the user's draft.",
+      "artifacts_needed": ["Native view source or precise behavior description", "Platform theme and text-scaling conventions"],
+      "assess": ["Adapts principles without browser CSS mandates", "Prioritizes text scaling and recovery", "Preserves data and honest save status", "Does not invent offline synchronization", "Identifies runtime checks still needed"]
+    },
+    {
+      "id": "local-shadow",
+      "prompt": "Use sajid-ui-design to soften only this popover shadow while keeping its behavior and our existing theme system.",
+      "artifacts_needed": ["Popover component", "Elevation token consumers", "Relevant themes"],
+      "assess": ["Keeps the change local unless shared consumers warrant it", "Balances shadow layers on real backgrounds", "Checks clipping and boundaries", "Preserves focus and dismissal"]
+    },
+    {
+      "id": "marketing-from-scratch",
+      "prompt": "Use sajid-ui-design to create a distinctive landing page for this product from the supplied facts and assets.",
+      "artifacts_needed": ["Product facts", "Audience and conversion goal", "Available brand assets"],
+      "assess": ["Clarifies proposition and evidence", "Uses product-specific composition", "Does not fabricate claims or customer proof", "Defines relevant responsive and interactive states", "Avoids imposing the dashboard's density or style"]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sajid UI Design"
+  short_description: "Principled UI design with adaptive, verifiable decisions"
+  default_prompt: "Use $sajid-ui-design to improve this frontend through clear hierarchy, color, depth, and accessible interaction."

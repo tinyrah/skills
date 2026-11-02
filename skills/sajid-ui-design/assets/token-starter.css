@@ -1,0 +1,157 @@
+/*
+ * Original example for this skill; not a copied Sajid palette or a universal style.
+ * Reuse the host project's tokens instead when they already serve these roles.
+ * Apply data-theme through the host's existing preference/persistence mechanism.
+ * Example classes below are opt-in, not global element resets.
+ * Check resolved colors and actual states; these tokens do not certify a UI.
+ */
+
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+  --ui-canvas: #f2f5f7;
+  --ui-surface: #ffffff;
+  --ui-surface-raised: #ffffff;
+  --ui-surface-recessed: #e7edf1;
+  --ui-text: #172430;
+  --ui-text-muted: #536171;
+  --ui-border: #708092; /* Essential boundary; still test against its neighbors. */
+  --ui-divider: #dce3e8; /* Decoration only; not a substitute for essential edges. */
+  --ui-action: #0f766e;
+  --ui-action-hover: #115e59;
+  --ui-action-pressed: #134e4a;
+  --ui-on-action: #ffffff;
+  --ui-selection: #d5f5ee;
+  --ui-on-selection: #123d36;
+  --ui-focus: #144ed1;
+  --ui-danger: #b42318;
+  --ui-warning: #795300;
+  --ui-success: #116944;
+  --ui-info: #1d4ed8;
+  --ui-disabled-bg: #e1e7ed;
+  --ui-disabled-fg: #566270;
+  --ui-shadow-rest: none;
+  --ui-shadow-raised: 0 1px 2px rgb(18 32 47 / 14%),
+    0 4px 12px rgb(18 32 47 / 7%);
+  --ui-shadow-floating: 0 3px 7px rgb(18 32 47 / 15%),
+    0 14px 32px rgb(18 32 47 / 12%);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --ui-canvas: #10161f;
+  --ui-surface: #18222f;
+  --ui-surface-raised: #233142;
+  --ui-surface-recessed: #0c121a;
+  --ui-text: #edf3f8;
+  --ui-text-muted: #b3c1d1;
+  --ui-border: #8292a6;
+  --ui-divider: #344359;
+  --ui-action: #65ddd1;
+  --ui-action-hover: #8ce8df;
+  --ui-action-pressed: #b0f2e9;
+  --ui-on-action: #092925;
+  --ui-selection: #204b47;
+  --ui-on-selection: #d9fff5;
+  --ui-focus: #a8c7ff;
+  --ui-danger: #ffb4ab;
+  --ui-warning: #f3ce77;
+  --ui-success: #8ddbad;
+  --ui-info: #adc8ff;
+  --ui-disabled-bg: #2a3747;
+  --ui-disabled-fg: #a8b6c7;
+  --ui-shadow-rest: none;
+  --ui-shadow-raised: 0 1px 3px rgb(0 0 0 / 26%),
+    0 5px 14px rgb(0 0 0 / 16%);
+  --ui-shadow-floating: 0 3px 8px rgb(0 0 0 / 30%),
+    0 16px 36px rgb(0 0 0 / 24%);
+}
+
+:root {
+  /* Example scales; choose roles and density before adopting these values. */
+  --ui-space-1: 0.25rem;
+  --ui-space-2: 0.5rem;
+  --ui-space-3: 0.75rem;
+  --ui-space-4: 1rem;
+  --ui-space-6: 1.5rem;
+  --ui-space-8: 2rem;
+  --ui-space-12: 3rem;
+  --ui-radius-control: 0.375rem;
+  --ui-radius-panel: 0.75rem;
+  --ui-text-support: 0.875rem;
+  --ui-text-body: 1rem;
+  --ui-text-heading: 1.5rem;
+  --ui-leading-body: 1.55;
+  --ui-leading-heading: 1.2;
+}
+
+/* Apply these example classes deliberately; preserve native element semantics. */
+.ui-example-panel {
+  color: var(--ui-text);
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-divider);
+  border-radius: var(--ui-radius-panel);
+  padding: var(--ui-space-6);
+  box-shadow: var(--ui-shadow-rest);
+}
+
+.ui-example-panel[data-elevated="true"] {
+  background: var(--ui-surface-raised);
+  box-shadow: var(--ui-shadow-raised);
+}
+
+.ui-example-muted {
+  color: var(--ui-text-muted);
+}
+
+.ui-example-action {
+  font: inherit;
+  font-weight: 600;
+  color: var(--ui-on-action);
+  background: var(--ui-action);
+  border: 1px solid transparent;
+  border-radius: var(--ui-radius-control);
+  padding: var(--ui-space-2) var(--ui-space-4);
+  min-block-size: 2.75rem; /* Example comfort goal, not a universal AA minimum. */
+  cursor: pointer;
+  transition: background-color 120ms ease-out;
+}
+
+@media (hover: hover) {
+  .ui-example-action:hover:not(:disabled) {
+    background: var(--ui-action-hover);
+  }
+}
+
+.ui-example-action:active:not(:disabled) {
+  background: var(--ui-action-pressed);
+}
+
+.ui-example-action:focus-visible {
+  outline: 3px solid var(--ui-focus);
+  outline-offset: 3px;
+}
+
+.ui-example-action:disabled {
+  color: var(--ui-disabled-fg);
+  background: var(--ui-disabled-bg);
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ui-example-action {
+    transition: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .ui-example-panel,
+  .ui-example-action {
+    border-color: CanvasText;
+    box-shadow: none;
+  }
+
+  .ui-example-action:focus-visible {
+    outline-color: Highlight;
+  }
+}
